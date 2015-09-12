@@ -36,8 +36,8 @@ enum {
 
 // must be kept in sync with definitions in BatteryManager.java
 enum {
-    BATTERY_CHARGE_TYPE_UNKNOWN = 1, // equals BatteryManager.BATTERY_CHARGE_TYPE_UNKNOWN constant
-    BATTERY_CHARGE_TYPE_FAST_CHARGING = 2, // equals BatteryManager.BATTERY_CHARGE_TYPE_FAST_CHARGING constant
+    BATTERY_CHARGE_RATE_UNKNOWN = 1, // equals BatteryManager.BATTERY_CHARGE_RATE_UNKNOWN constant
+    BATTERY_CHARGE_RATE_FAST_CHARGING = 2, // equals BatteryManager.BATTERY_CHARGE_RATE_FAST_CHARGING constant
 };
 
 // must be kept in sync with definitions in BatteryManager.java
@@ -65,7 +65,7 @@ struct BatteryProperties {
     bool chargerUsbOnline;
     bool chargerWirelessOnline;
     int batteryStatus;
-    int batteryChargeType;
+    int batteryChargeRate;
     int batteryHealth;
     bool batteryPresent;
     int batteryLevel;
